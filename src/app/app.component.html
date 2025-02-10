@@ -1,0 +1,23 @@
+<div class="Container">
+  <div class="card">
+    <h1>Rock Paper Scissors</h1>
+    <div id="score">
+
+      <div>User: <span id="user-score">{{ user_score }}</span></div>
+      <div>Computer: <span id="computer-score">{{ computer_score }}</span></div>
+</div>
+  </div>
+
+  <div id="choices">
+
+    <img src="assets/rockorg.jpg"   alt="Rock" (click)="play('rock')">  
+    <img src="assets/paper.jpg"    alt="Paper" (click)="play('paper')">
+    <img src="assets/scissor.jpg"  alt="Scissor"  (click)="play('scissor')">
+  </div>
+
+    <div id="result">
+      <h2>{{ result }}</h2>
+    </div>
+
+    <button (click)="resetGame()">Reset Game</button>
+  </div>
